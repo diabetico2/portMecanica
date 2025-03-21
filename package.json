@@ -2,8 +2,8 @@
   "name": "portfolio-mecanica",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://diabetico2.github.io/portMecanica",
   "dependencies": {
-    "homepage": "https://github.com/diabetico2.github.io/portMecanica",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
