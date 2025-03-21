@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/placeholder.jpg"; // Substitua pelo caminho correto
 
 const Navbar = () => {
   return (
@@ -13,7 +14,7 @@ const Navbar = () => {
         maxWidth: "100%",
       }}
     >
-      <h1>Oficina Mecânica</h1>
+      <img src={logo} alt="Logo Oficina Mecânica" style={{ height: "50px" }} />
       <h1>contatos</h1>
     </nav>
   );

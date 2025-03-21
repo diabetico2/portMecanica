@@ -12,7 +12,7 @@ const Footer = () => {
     >
       <p>&copy; 2025 Oficina Mecânica - Todos os direitos reservados.</p>
       <p>
-        &copy; feito por{" "}
+         feito por{" "}
         <a href="https://linktr.ee/allanjosepereira">
           Allan José De Oliveira Pereira
         </a>

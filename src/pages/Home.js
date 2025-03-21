@@ -1,13 +1,17 @@
-import React from "react";
+import React from "react"; // 🔹 Removido useEffect
 import "../App.css";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+
+// Importar imagens (coloque os caminhos corretos)
 import bannerImg from "../assets/placeholder.jpg";
 import manutencaoImg from "../assets/placeholder.jpg";
 import oleoImg from "../assets/placeholder.jpg";
 import alinhamentoImg from "../assets/placeholder.jpg";
 import diagnosticoImg from "../assets/placeholder.jpg";
 
-
 const Home = () => {
+  useScrollAnimation(); // Ativa o efeito de scroll
+
   const items = [
     {
       title: "Serviço de Manutenção",
@@ -38,34 +42,34 @@ const Home = () => {
   return (
     <div className="container">
       {/* Banner */}
-      <div className="banner">
+      <div className="banner hidden">
         <img src={bannerImg} alt="Banner Oficina Mecânica" className="banner-img" />
       </div>
 
       {/* Descrição */}
-      <p className="description">
+      <p className="description hidden">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
 
-      {/* Seção de itens */}
+      {/* Seção de serviços */}
       <div className="item-container">
         {items.map((item, index) => (
-          <div key={index} className={`item ${item.position}`}>
+          <div key={index} className={`item ${item.position} hidden`}>
             {item.position === "left" ? (
               <>
-                <img src={item.img} alt={item.title} className="item-img" />
-                <div className="text-box">
+                <img src={item.img} alt={item.title} className="item-img hidden" />
+                <div className="text-box hidden">
                   <h2>{item.title}</h2>
                   <p>{item.text}</p>
                 </div>
               </>
             ) : (
               <>
-                <div className="text-box">
+                <div className="text-box hidden">
                   <h2>{item.title}</h2>
                   <p>{item.text}</p>
                 </div>
-                <img src={item.img} alt={item.title} className="item-img" />
+                <img src={item.img} alt={item.title} className="item-img hidden" />
               </>
             )}
           </div>
@@ -73,7 +77,7 @@ const Home = () => {
       </div>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer hidden">
         <p>redes/contatos</p>
       </footer>
     </div>
