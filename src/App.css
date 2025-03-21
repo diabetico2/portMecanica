@@ -16,7 +16,7 @@ body {
 .banner {
   width: 100%;
   max-width: 1200px;
-  height: 300px; /* Ajuste para simular um espaço de imagem */
+  height: 300px; /* Simula um espaço de imagem */
   background-color: white;
   color: black;
   display: flex;
@@ -41,32 +41,49 @@ body {
 
 .item {
   display: flex;
-  /* Remova o justify-content: space-between para não empurrar cada lado */
-  /* justify-content: space-between; */
-
-  /* Alinhamento vertical (topo ou centro). Se quiser alinhar pelo topo, use flex-start */
-  align-items: flex-start; 
-
-  /* Espaço entre texto e quadrado */
-  gap: 20px;  
-
-  text-align: left;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  gap: 0px; /* Reduzindo totalmente o espaço entre os elementos */
 }
 
-
+/* Ajuste direto no espaçamento do texto */
 .text-box {
-  /* flex: 1 para o texto ocupar o espaço restante, sem forçar max-width */
-  flex: 1; 
-  /* max-width: 45%;  se quiser limitar, mantenha, mas teste valores diferentes */
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
+/* Quadrado na extrema esquerda */
+.item.left .square {
+  margin-left: 0;
+}
 
+/* Quadrado na extrema direita */
+.item.right .square {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Texto à esquerda */
+.item.left .text-box {
+  text-align: left;
+  padding-right: 43%; /* Deixando bem próximo do quadrado */
+}
+
+/* Texto à direita */
+.item.right .text-box {
+  text-align: right;
+  padding-left: 43% /* Deixando bem próximo do quadrado */
+}
+
+/* Quadrado */
 .square {
   width: 250px;
   height: 250px;
   background-color: white;
 }
+
 
 @media (max-width: 768px) {
   .item {
@@ -77,6 +94,7 @@ body {
   .text-box {
     max-width: 100%;
     text-align: center;
+    padding: 0;
   }
 }
 

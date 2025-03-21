@@ -1,29 +1,28 @@
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css";
 
 const Home = () => {
   const items = [
     {
       title: "Serviço de Manutenção",
       text: "Oferecemos manutenção completa para garantir que seu veículo esteja sempre em perfeito estado.",
-      position: "left"
+      position: "left",
     },
     {
       title: "Troca de Óleo",
       text: "Realizamos troca de óleo com produtos de alta qualidade para o melhor desempenho do motor.",
-      position: "right"
+      position: "right",
     },
     {
       title: "Alinhamento e Balanceamento",
       text: "Evite desgaste irregular dos pneus e problemas na suspensão com nossos serviços de alinhamento.",
-      position: "left"
+      position: "left",
     },
     {
       title: "Diagnóstico Completo",
       text: "Utilizamos tecnologia avançada para diagnosticar e corrigir qualquer problema no seu veículo.",
-      position: "right"
+      position: "right",
     },
-
   ];
 
   return (
@@ -41,12 +40,25 @@ const Home = () => {
       {/* Seção de itens */}
       <div className="item-container">
         {items.map((item, index) => (
-          <div key={index} className="item" style={{ flexDirection: item.position === "left" ? "row" : "row-reverse" }}>
-            <div className="text-box">
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
-            </div>
-            <div className="square"></div>
+          <div key={index} className={`item ${item.position}`}>
+            {/* Ajustando a ordem dos elementos */}
+            {item.position === "left" ? (
+              <>
+                <div className="square"></div>
+                <div className="text-box">
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-box">
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
+                <div className="square"></div>
+              </>
+            )}
           </div>
         ))}
       </div>
