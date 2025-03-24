@@ -118,11 +118,58 @@ Isso atualizará seu site no GitHub Pages com as novas mudanças.
 - Certifique-se de rodar **`npm run deploy`** depois de qualquer alteração.
 
 ---
+Boa! Como a versão do **GitHub está mais avançada** e você quer **atualizar a que está no seu PC**, o processo ideal é **sincronizar (fazer `pull`) do repositório remoto**.
 
-## 🎯 **Conclusão**
-Agora você pode fazer deploy do seu projeto React no GitHub Pages sempre que precisar! 🚀
+---
 
-Se precisar de mais ajustes, me avise. 😃
+## ✅ **Atualizar o projeto local com a versão do GitHub**
+
+### 📦 1. Abra o terminal na pasta do projeto local
+
+Certifique-se de estar dentro do seu projeto:
+
+```bash
+cd D:/freelanceMecanica/portMecanica
+```
+
+### 🛠️ 2. Verifique se você está na branch correta (`main`)
+
+```bash
+git checkout main
+```
+
+### 🔄 3. Faça o pull da versão mais recente do GitHub
+
+```bash
+git pull origin main
+```
+
+Esse comando vai:
+- Baixar as mudanças do GitHub
+- Atualizar seu código local
+
+> Se houver **conflitos**, o Git vai te avisar e você poderá resolvê-los manualmente.
+
+---
+
+## ❗ Alternativa (limpar tudo e recomeçar do zero)
+
+Se você **não tem nenhuma modificação local que precise salvar**, você pode deletar a pasta local e clonar novamente:
+
+```bash
+# Volte para a pasta onde os projetos ficam
+cd D:/freelanceMecanica
+
+# Apague a pasta antiga
+rm -rf portMecanica
+
+# Clone novamente a versão mais recente
+git clone https://github.com/diabetico2/portMecanica.git
+```
+
+---
+
+
 ```
 
 ---
