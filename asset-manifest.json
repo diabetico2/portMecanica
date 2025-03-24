@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portMecanica/static/css/main.a684f861.css",
-    "main.js": "/portMecanica/static/js/main.2ce7feb6.js",
+    "main.css": "/portMecanica/static/css/main.ed375658.css",
+    "main.js": "/portMecanica/static/js/main.a6e70fab.js",
     "static/js/453.5bc2ed4f.chunk.js": "/portMecanica/static/js/453.5bc2ed4f.chunk.js",
     "index.html": "/portMecanica/index.html",
-    "main.a684f861.css.map": "/portMecanica/static/css/main.a684f861.css.map",
-    "main.2ce7feb6.js.map": "/portMecanica/static/js/main.2ce7feb6.js.map",
+    "main.ed375658.css.map": "/portMecanica/static/css/main.ed375658.css.map",
+    "main.a6e70fab.js.map": "/portMecanica/static/js/main.a6e70fab.js.map",
     "453.5bc2ed4f.chunk.js.map": "/portMecanica/static/js/453.5bc2ed4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a684f861.css",
-    "static/js/main.2ce7feb6.js"
+    "static/css/main.ed375658.css",
+    "static/js/main.a6e70fab.js"
   ]
 }
