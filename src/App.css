@@ -246,7 +246,7 @@ button {
     padding: 0 !important;
     margin: 0 auto !important;
     text-align: center !important;
-    max-width: 100% !important;
+    max-width: 80% !important;
     box-sizing: border-box;
     line-height: 1.6;
     word-wrap: break-word;
@@ -267,6 +267,13 @@ button {
     object-fit: cover;
     background-attachment: scroll;
     background-size: cover;
+  }
+  .description {
+    text-align: center;
+    max-width: 80% !important;
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    color: #ffffff;
   }
 }
 
