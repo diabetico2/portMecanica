@@ -1,27 +1,27 @@
-import React from "react"; // 🔹 Removido useEffect
+import React from "react";
 import "../App.css";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
-// Importar imagens (coloque os caminhos corretos)
+// Imagens
 import bannerImg from "../assets/placeholder.jpg";
-import manutencaoImg from "../assets/placeholder.jpg";
-import oleoImg from "../assets/placeholder.jpg";
+import manutencaoImg from "../assets/Churrasco.jpeg";
+import oleoImg from "../assets/Carrinho.jpeg";
 import alinhamentoImg from "../assets/placeholder.jpg";
 import diagnosticoImg from "../assets/placeholder.jpg";
 
 const Home = () => {
-  useScrollAnimation(); // Ativa o efeito de scroll
+  useScrollAnimation(); // Scroll reveal
 
   const items = [
     {
-      title: "Serviço de Manutenção",
-      text: "Oferecemos manutenção completa para garantir que seu veículo esteja sempre em perfeito estado.",
+      title: "Barbacoa",
+      text: "Una barbacoa de calidad es sinónimo de buenos momentos, sabores intensos y una experiencia gastronómica inigualable. Ya sea para reuniones familiares, celebraciones o simplemente disfrutar de una comida deliciosa en nuesto Taller. ",
       position: "left",
       img: manutencaoImg,
     },
     {
-      title: "Troca de Óleo",
-      text: "Realizamos troca de óleo com produtos de alta qualidade para o melhor desempenho do motor.",
+      title: "Pista cochesitos 4x4 rc",
+      text: " ",
       position: "right",
       img: oleoImg,
     },
@@ -43,35 +43,29 @@ const Home = () => {
     <div className="container">
       {/* Banner */}
       <div className="banner hidden">
-        <img src={bannerImg} alt="Banner Oficina Mecânica" className="banner-img" />
+        <img
+          src={bannerImg}
+          alt="Banner Oficina Mecânica"
+          className="banner-img"
+        />
       </div>
 
       {/* Descrição */}
       <p className="description hidden">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Con precios asequibles para los socios, barbacoas, circuito RC, centro
+        de reunión para los clubs de la zona, área de pernoctar, zona para
+        caravanas.... ¡Y MUCHO MÁS! Contáctanos para más información.
       </p>
 
-      {/* Seção de serviços */}
+      {/* Serviços */}
       <div className="item-container">
         {items.map((item, index) => (
           <div key={index} className={`item ${item.position} hidden`}>
-            {item.position === "left" ? (
-              <>
-                <img src={item.img} alt={item.title} className="item-img hidden" />
-                <div className="text-box hidden">
-                  <h2>{item.title}</h2>
-                  <p>{item.text}</p>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="text-box hidden">
-                  <h2>{item.title}</h2>
-                  <p>{item.text}</p>
-                </div>
-                <img src={item.img} alt={item.title} className="item-img hidden" />
-              </>
-            )}
+            <img src={item.img} alt={item.title} className="item-img hidden" />
+            <div className="text-box hidden">
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </div>
           </div>
         ))}
       </div>

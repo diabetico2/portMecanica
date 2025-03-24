@@ -35,7 +35,7 @@ body {
   max-width: 800px;
   margin: 0 auto 40px auto;
   font-size: 1.2rem;
-  color: #bebeb9; /* Amarelo para destacar */
+  color: #ffffff; /* Amarelo para destacar */
 }
 
 /* Seção de serviços */
@@ -76,7 +76,7 @@ body {
   margin: 0;
   padding: 10px;
   line-height: 1.5;
-  color: #E0E0E0;
+  color: #ffffff;
 }
 
 /* Ajustes para alinhar corretamente */
@@ -129,9 +129,10 @@ button:hover {
 }
 
 /* Responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   .item {
-    flex-direction: column;
+    flex-direction: column !important;
     text-align: center;
     align-items: center;
   }
@@ -145,16 +146,33 @@ button:hover {
   .item-img {
     width: 90%;
     max-width: 300px;
+    margin: 0 auto;
   }
 }
 
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 30px;
-  margin-top: 50px;
-  font-size: 1rem;
-  opacity: 0.8;
-  background-color: #333; /* Cinza escuro para separar bem do conteúdo */
-  color: #E0E0E0;
+/* Reforça o layout correto no desktop */
+@media (min-width: 769px) {
+  .item.left {
+    flex-direction: row;
+  }
+
+  .item.right {
+    flex-direction: row-reverse;
+  }
+
+  .text-box {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .item.left .text-box {
+    padding-right: 36%;
+    text-align: left;
+  }
+
+  .item.right .text-box {
+    padding-left: 36%;
+    text-align: right;
+  }
 }
+
