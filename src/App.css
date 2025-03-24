@@ -167,12 +167,14 @@ button:hover {
 
 .footer a {
   color: #aaa;
-  text-decoration: underline;
+  text-decoration: none; /* Remove a linha */
 }
 
 .footer a:hover {
   color: #fff;
+  text-decoration: underline; /* (opcional) linha só no hover */
 }
+
 .icons {
   display: flex;
   justify-content: center;
@@ -229,12 +231,12 @@ button:hover {
   }
 
   .item.left .text-box {
-    padding-right: 36%;
+    padding-right: 42%;
     text-align: left;
   }
 
   .item.right .text-box {
-    padding-left: 36%;
+    padding-left: 42%;
     text-align: right;
   }
 }
