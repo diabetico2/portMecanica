@@ -6,7 +6,7 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 import bannerImg from "../assets/placeholder.jpg";
 import manutencaoImg from "../assets/Churrasco.jpeg";
 import oleoImg from "../assets/Carrinho.jpeg";
-import alinhamentoImg from "../assets/placeholder.jpg";
+import alinhamentoImg from "../assets/Bar.jpeg";
 import diagnosticoImg from "../assets/placeholder.jpg";
 
 const Home = () => {
@@ -21,13 +21,13 @@ const Home = () => {
     },
     {
       title: "Pista cochesitos 4x4 rc",
-      text: " ",
+      text: "Las pistas para cochecitos 4x4 RC están diseñadas para ofrecer la máxima emoción y desafío a los amantes del radiocontrol. Una pista de calidad debe contar con ciertas características esenciales para garantizar una experiencia realista y llena de adrenalina.",
       position: "right",
       img: oleoImg,
     },
     {
-      title: "Alinhamento e Balanceamento",
-      text: "Evite desgaste irregular dos pneus e problemas na suspensão com nossos serviços de alinhamento.",
+      title: "Bar Asociación Gorila 4x4",
+      text: "Desde cócteles clásicos hasta creaciones exclusivas, cada trago es preparado con ingredientes frescos y un toque especial que sorprende al paladar.",
       position: "left",
       img: alinhamentoImg,
     },
@@ -70,10 +70,7 @@ const Home = () => {
         ))}
       </div>
 
-      {/* Footer */}
-      <footer className="footer hidden">
-        <p>redes/contatos</p>
-      </footer>
+
     </div>
   );
 };

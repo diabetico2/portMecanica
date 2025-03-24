@@ -1,6 +1,6 @@
 body {
   background-color: #121212; /* Preto mais suave para evitar um visual "apagado" */
-  color: #E0E0E0; /* Cinza claro para melhor legibilidade */
+  color: #e0e0e0; /* Cinza claro para melhor legibilidade */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 128, 0, 0.3); /* Laranja metálico */
   transition: transform 0.3s ease-in-out;
-  border: 2px solid #A0A0A0; /* Cinza metálico para reforçar o visual industrial */
+  border: 2px solid #a0a0a0; /* Cinza metálico para reforçar o visual industrial */
 }
 
 /* Efeito ao passar o mouse */
@@ -101,7 +101,7 @@ body {
 
 /* Botões e elementos interativos */
 button {
-  background-color: #FF8000;
+  background-color: #ff8000;
   color: black;
   padding: 10px 20px;
   border: none;
@@ -113,7 +113,7 @@ button {
 }
 
 button:hover {
-  background-color: #FFA500;
+  background-color: #ffa500;
 }
 /* Efeito de transição inicial (esconde os elementos) */
 .hidden {
@@ -126,6 +126,69 @@ button:hover {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+/* Footer estilizado */
+.footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #333;
+}
+
+.social-container {
+  margin-bottom: 20px;
+}
+
+.social-container h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #ffffff;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.icons a {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
 }
 
 /* Responsividade */
@@ -175,4 +238,3 @@ button:hover {
     text-align: right;
   }
 }
-
