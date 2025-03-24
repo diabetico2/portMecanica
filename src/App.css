@@ -232,32 +232,44 @@ button {
 ================================ */
 @media (max-width: 768px) {
   .item {
+    display: flex;
     flex-direction: column !important;
-    text-align: center;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 20px;
+    margin-bottom: 40px;
   }
 
-  .text-box {
-    max-width: 90%;
-    text-align: center;
-    padding: 0;
+  /* Aqui, *todas* as text-box dentro de .item terão esse estilo */
+  .item .text-box {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
-.item-img {
-  border: 2px solid rgba(255, 117, 24, 0.6);
-  box-shadow: 0 6px 16px rgba(255, 117, 24, 0.15);
-}
-.item-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 117, 24, 0.6);
-}
-
+  .item-img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto 20px auto !important;
+    display: block;
+  }
 
   .banner-img {
-    background-attachment: fixed;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+    background-attachment: scroll;
     background-size: cover;
-  }  
+  }
 }
+
 
 @media (min-width: 769px) {
   .item.left {
