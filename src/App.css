@@ -1,20 +1,23 @@
+/* ===============================
+   ESTRUTURA GLOBAL
+================================ */
 body {
-  background-color: #121212; /* Preto mais suave para evitar um visual "apagado" */
-  color: #e0e0e0; /* Cinza claro para melhor legibilidade */
+  background: linear-gradient(to bottom, #1c1b1b, #2c1e1e, #2b2b2b);
+  color: #e0e0e0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 95%;
   margin: 0 auto;
   padding: 20px;
 }
-
-/* Banner */
+/* ===============================
+   BANNER / HERO
+================================ */
 .banner {
   width: 100%;
   max-width: 1200px;
@@ -26,19 +29,34 @@ body {
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3); /* Laranja sutil no banner */
+  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+
 }
 
-/* Descrição */
+/* Efeito de entrada */
+.banner.hidden {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.8s ease-out;
+}
+
+.banner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===============================
+   DESCRIÇÃO
+================================ */
 .description {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 40px auto;
   font-size: 1.2rem;
-  color: #ffffff; /* Amarelo para destacar */
+  color: #ffffff;
 }
-
-/* Seção de serviços */
+/* ===============================
+   SEÇÃO DE SERVIÇOS
+================================ */
 .item-container {
   display: flex;
   flex-direction: column;
@@ -53,33 +71,48 @@ body {
   gap: 20px;
 }
 
-/* Imagens dos serviços */
+.item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 128, 0, 0.1);
+  padding-bottom: 30px;
+}
+/* ===============================
+   IMAGENS DOS SERVIÇOS
+================================ */
 .item-img {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 128, 0, 0.3); /* Laranja metálico */
+  box-shadow: 0 6px 12px rgba(255, 128, 0, 0.25);
   transition: transform 0.3s ease-in-out;
-  border: 2px solid #a0a0a0; /* Cinza metálico para reforçar o visual industrial */
+  border: 2px solid #a0a0a0;
 }
 
-/* Efeito ao passar o mouse */
 .item-img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(255, 165, 0, 0.5);
 }
-
-/* Texto */
+/* ===============================
+   TEXTO DOS SERVIÇOS
+================================ */
 .text-box {
   max-width: 480px;
   margin: 0;
   padding: 10px;
   line-height: 1.5;
   color: #ffffff;
+  transition: all 0.6s ease;
 }
 
-/* Ajustes para alinhar corretamente */
+.text-box h2 {
+  color: #ff7518;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 6px rgba(255, 117, 24, 0.4);
+}
+
+
+/* Ajuste posição */
 .item.left .item-img {
   margin-left: 0;
 }
@@ -98,45 +131,63 @@ body {
   text-align: right;
   padding-left: 37%;
 }
+.text-box h2:hover {
+  color: #ffa500;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 
-/* Botões e elementos interativos */
+/* ===============================
+   BOTÕES / ELEMENTOS INTERATIVOS
+================================ */
 button {
   background-color: #ff8000;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: 0.3s;
+  color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 128, 0, 0.6);
 }
 
 button:hover {
   background-color: #ffa500;
+  box-shadow: 0 0 15px rgba(255, 128, 0, 0.9);
 }
-/* Efeito de transição inicial (esconde os elementos) */
+/* ===============================
+   SCROLL ANIMATION
+================================ */
 .hidden {
   opacity: 0;
-  transform: translateY(30px); /* Move o elemento para baixo inicialmente */
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.8s ease-out;
 }
-
-/* Quando o elemento entra na tela */
 .show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
-/* Footer estilizado */
+
+/* ===============================
+   FOOTER
+================================ */
 .footer {
   background-color: #1e1e1e;
   color: #e0e0e0;
   text-align: center;
   padding: 40px 20px;
   margin-top: 50px;
-  border-top: 1px solid #333;
+  border-top: 2px solid #686766;
 }
 
+.footer a {
+  color: #dad1d1;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* ===============================
+   REDES SOCIAIS
+================================ */
 .social-container {
   margin-bottom: 20px;
 }
@@ -150,41 +201,15 @@ button:hover {
 .icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.icons a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.icons a:hover {
-  color: #ffffff;
-}
-
-.footer a {
-  color: #aaa;
-  text-decoration: none; /* Remove a linha */
-}
-
-.footer a:hover {
-  color: #fff;
-  text-decoration: underline; /* (opcional) linha só no hover */
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
 
 .icons a {
+  text-decoration: none;
   color: #ffffff;
+  font-weight: bold;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -192,9 +217,19 @@ button:hover {
   color: #ffffff;
   transform: scale(1.2);
 }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 117, 24, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 117, 24, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 117, 24, 0); }
+}
 
-/* Responsividade */
-/* Responsividade */
+button {
+  animation: pulse 3s infinite;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================ */
 @media (max-width: 768px) {
   .item {
     flex-direction: column !important;
@@ -208,14 +243,22 @@ button:hover {
     padding: 0;
   }
 
-  .item-img {
-    width: 90%;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+.item-img {
+  border: 2px solid rgba(255, 117, 24, 0.6);
+  box-shadow: 0 6px 16px rgba(255, 117, 24, 0.15);
+}
+.item-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 117, 24, 0.6);
 }
 
-/* Reforça o layout correto no desktop */
+
+  .banner-img {
+    background-attachment: fixed;
+    background-size: cover;
+  }  
+}
+
 @media (min-width: 769px) {
   .item.left {
     flex-direction: row;

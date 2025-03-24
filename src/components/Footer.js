@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <p className="copyright">
-        © 2025 Oficina Mecânica - Todos os direitos reservados.
+        © 2025 Bar Asociación Gorila - Todos os direitos reservados.
         <br />
         feito por{" "}
         <a

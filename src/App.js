@@ -7,9 +7,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div
-        style={{ backgroundColor: "black", color: "white", minHeight: "100vh" }}
-      >
+      <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
