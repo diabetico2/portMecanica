@@ -6,7 +6,7 @@ import useScrollAnimation from "../hooks/useScrollAnimation";
 import bannerImg from "../assets/placeholder.jpg";
 import manutencaoImg from "../assets/Churrasco.jpeg";
 import oleoImg from "../assets/Carrinho.jpeg";
-import alinhamentoImg from "../assets/Bar.jpeg";
+import alinhamentoImg from "../assets/bar.jpeg";
 import diagnosticoImg from "../assets/placeholder.jpg";
 
 const Home = () => {
