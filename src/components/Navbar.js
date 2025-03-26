@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/placeholder.jpg"; // Substitua pelo caminho correto
+import logo from "../assets/logo-gorila.png"; // Substitua pelo caminho correto
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
       <img
         src={logo}
         alt="Logo Oficina Mecânica"
-        style={{ height: "50px", borderRadius: "5px" }}
+        style={{ height: "54px", borderRadius: "5px" }}
       />
 
       {/* Contatos */}

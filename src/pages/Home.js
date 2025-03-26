@@ -51,7 +51,7 @@ const Home = () => {
       </div>
 
       {/* Descrição */}
-      <p className="description hidden">
+      <p className="description hidden" style={{fontSize: "1.4rem"}}>
         Con precios asequibles para los socios, barbacoas, circuito RC, centro
         de reunión para los clubs de la zona, área de pernoctar, zona para
         caravanas.... ¡Y MUCHO MÁS! Contáctanos para más información.
