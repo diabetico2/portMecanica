@@ -3,7 +3,7 @@ import "../App.css";
 import useScrollAnimation from "../hooks/useScrollAnimation";
 
 // Imagens
-import bannerImg from "../assets/placeholder.jpg";
+import bannerImg from "../assets/bienvinido.png";
 import manutencaoImg from "../assets/Churrasco.jpeg";
 import oleoImg from "../assets/Carrinho.jpeg";
 import alinhamentoImg from "../assets/bar.jpeg";
