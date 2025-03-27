@@ -1,0 +1,100 @@
+/* Oculta o side-menu em telas grandes (opcional) */
+@media (min-width: 768px) {
+    .side-menu {
+      display: none !important;
+    }
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* impede rolagem horizontal */
+  }
+  
+  /* Painel lateral fixo */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;               /* em vez de -250px, definimos left:0 e controlamos via transform */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    z-index: 9999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    /* Transição suave ao abrir/fechar */
+    transition: transform 0.3s ease;
+  
+    /* Inicia fora da tela: -100% no eixo X (ou seja, totalmente à esquerda) */
+    transform: translateX(-100%);
+  }
+  
+  /* Quando isOpen for true, adicionamos a classe .open e trazemos o menu para dentro da tela */
+  .side-menu.open {
+    transform: translateX(0);
+  }
+  
+  /* Botão X */
+  .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end; /* joga o X para a direita dentro do menu */
+  }
+  
+  /* Links dentro do menu lateral */
+  .side-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .side-menu-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  .side-menu-nav a:hover {
+    color: #ffa500;
+  }
+  
+  /* Redes Sociais no final do menu */
+  .mobile-social {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ícones */
+  .social-icon {
+    width: 61px;
+    height: auto;
+    transition: transform 0.2s ease;
+  }
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .linktree-btn {
+    display: inline-block;
+    background-color: #ff8000;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 128, 0, 0.6);
+    transition: background-color 0.3s ease;
+  }
+  .linktree-btn:hover {
+    background-color: #e06f00;
+  }
+
+  
