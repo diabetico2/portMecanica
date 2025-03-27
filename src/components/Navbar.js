@@ -1,61 +1,63 @@
 // Navbar.js
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaWhatsapp, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo-gorila.png";
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
+  // Controla se o menu mobile está aberto ou fechado
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Função para alternar o estado do menu
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav
-      style={{
-        backgroundColor: "#333",
-        padding: "10px 20px",
-        color: "#fff",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        maxWidth: "100%",
-      }}
-    >
+    <nav className="navbar">
+      {/* Logo */}
       <img
         src={logo}
         alt="Logo Oficina Mecânica"
-        style={{ height: "54px", borderRadius: "5px" }}
+        className="navbar-logo"
       />
 
-      <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
-        <Link to="/" style={{ color: "#fff" }}>
-          Home
-        </Link>
-        <Link to="/eventos" style={{ color: "#fff" }}>
-        Eventos
-        </Link>
-        <Link to="/asociacion" style={{ color: "#fff" }}>
-          Asociación
-        </Link>
-        <Link to="/barbacoa" style={{ color: "#fff" }}>
-          Barbacoa
-        </Link>
-        <Link to="/pista" style={{ color: "#fff" }}>
-          Pista
-        </Link>
+      {/* Links (apenas para desktop) */}
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/eventos">Eventos</Link>
+        <Link to="/asociacion">Asociación</Link>
+        <Link to="/barbacoa">Barbacoa</Link>
+        <Link to="/pista">Pista</Link>
       </div>
 
-      <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
+      {/* Ícones de contato (WhatsApp e Email) */}
+      <div className="nav-icons">
         <a
           href="https://wa.me/5599999999999"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#25D366", fontSize: "1.5rem" }}
         >
           <FaWhatsapp />
         </a>
-        <a
-          href="mailto:exemplo@email.com"
-          style={{ color: "#fff", fontSize: "1.5rem" }}
-        >
+        <a href="mailto:exemplo@email.com">
           <FaEnvelope />
         </a>
+      </div>
+
+      {/* Botão hambúrguer (visível só no mobile) */}
+      <button className="menu-toggle" onClick={handleMenuToggle}>
+        {isMenuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      {/* Menu expansível do mobile */}
+      <div className={`mobile-menu ${isMenuOpen ? "active" : ""}`}>
+        <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+        <Link to="/eventos" onClick={() => setIsMenuOpen(false)}>Eventos</Link>
+        <Link to="/asociacion" onClick={() => setIsMenuOpen(false)}>Asociación</Link>
+        <Link to="/barbacoa" onClick={() => setIsMenuOpen(false)}>Barbacoa</Link>
+        <Link to="/pista" onClick={() => setIsMenuOpen(false)}>Pista</Link>
       </div>
     </nav>
   );

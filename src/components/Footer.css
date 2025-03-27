@@ -1,0 +1,46 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Centraliza textos e elementos inline por padrão */
+  }
+  
+  .footer .social-container {
+    margin-bottom: 10px; /* Espaço entre a área de redes sociais e o copyright */
+  }
+  
+  .footer .icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones no container */
+    gap: 10px; /* Espaçamento horizontal entre os ícones */
+    margin-bottom: 10px;
+  }
+  
+  .footer .icons img {
+    width: 60px; /* Ajuste a largura dos ícones conforme necessário */
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Remova ou comente o trecho abaixo se não quiser layout especial para desktop
+  @media (min-width: 768px) {
+    .footer {
+      display: flex;              
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;           
+    }
+  
+    .footer .social-container {
+      margin-bottom: 0;           
+    }
+  
+    .footer .icons {
+      margin-bottom: 0;           
+    }
+  }
+  */
+  

@@ -1,76 +1,91 @@
 /* Navbar base */
 .navbar {
-    background-color: #333;
-    padding: 12px 20px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1000;
+  background-color: #333;
+  padding: 12px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 54px;
+  border-radius: 5px;
+}
+
+/* Links de navegação (desktop) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffa500;
+}
+
+/* Ícones de contato */
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+/* Menu hambúrguer (mobile) */
+.menu-toggle {
+  display: none;         /* Esconde o ícone no desktop */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Menu expansível no mobile */
+.mobile-menu {
+  display: none;         /* Esconde o menu por padrão */
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  /* Some com os links do desktop no mobile */
+  .nav-links {
+    display: none;
   }
-  
-  /* Logo */
-  .navbar-logo {
-    height: 54px;
+
+  /* Mostra o botão hambúrguer no mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Quando o menu estiver ativo, exibe o bloco mobile */
+  .mobile-menu.active {
+    display: flex;
+  }
+
+  /* Se quiser dar um fundo diferente no mobile:
+  .mobile-menu {
+    background-color: #444;
+    padding: 10px;
+  }
+
+  .mobile-menu a {
+    background-color: #555;
+    padding: 10px;
     border-radius: 5px;
   }
-  
-  /* Links de navegação (desktop) */
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #ffa500;
-  }
-  
-  /* Ícones de contato */
-  .nav-icons {
-    display: flex;
-    gap: 15px;
-    font-size: 1.5rem;
-  }
-  
-  /* Menu hambúrguer (mobile) */
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-  
-  /* Menu expansível no mobile */
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 10px;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  
-    .mobile-menu.active {
-      display: flex;
-    }
-  }
-  
+  */
+}
