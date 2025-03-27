@@ -51,7 +51,7 @@ body {
   max-width: 800px;
   margin: 0 auto 40px auto;
   font-size: 1.2rem;
-  color: #dd1d2b;
+  color: white;
 }
 /* ===============================
    SEÇÃO DE SERVIÇOS
@@ -99,7 +99,7 @@ body {
   margin: 0;
   padding: 10px;
   line-height: 1.5;
-  color: #dd1d2b;
+  color: white;
   transition: all 0.6s ease;
 }
 
