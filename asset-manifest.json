@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/portMecanica/static/css/main.e6870843.css",
-    "main.js": "/portMecanica/static/js/main.ee762e01.js",
+    "main.css": "/portMecanica/static/css/main.557b9586.css",
+    "main.js": "/portMecanica/static/js/main.888ab6e3.js",
     "static/js/453.5bc2ed4f.chunk.js": "/portMecanica/static/js/453.5bc2ed4f.chunk.js",
     "static/media/a5.png": "/portMecanica/static/media/a5.5ab596f66886a68962eb.png",
     "static/media/logo-gorila.png": "/portMecanica/static/media/logo-gorila.7a6a03fa3893032b4076.png",
     "static/media/banner2.png": "/portMecanica/static/media/banner2.925d9a3a5ac695f750c1.png",
     "static/media/Churrasco.jpeg": "/portMecanica/static/media/Churrasco.a923ec1eb173b2287351.jpeg",
     "static/media/Carrinho.jpeg": "/portMecanica/static/media/Carrinho.142d217b2b03c57597fc.jpeg",
+    "static/media/icon-zap.png": "/portMecanica/static/media/icon-zap.b4f6296ac94b1069b87b.png",
+    "static/media/icon-insta.png": "/portMecanica/static/media/icon-insta.2f657e6e5877d2559731.png",
+    "static/media/icon-tiktok.png": "/portMecanica/static/media/icon-tiktok.2e5bd3f17bc836886ce3.png",
     "index.html": "/portMecanica/index.html",
-    "main.e6870843.css.map": "/portMecanica/static/css/main.e6870843.css.map",
-    "main.ee762e01.js.map": "/portMecanica/static/js/main.ee762e01.js.map",
+    "main.557b9586.css.map": "/portMecanica/static/css/main.557b9586.css.map",
+    "main.888ab6e3.js.map": "/portMecanica/static/js/main.888ab6e3.js.map",
     "453.5bc2ed4f.chunk.js.map": "/portMecanica/static/js/453.5bc2ed4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6870843.css",
-    "static/js/main.ee762e01.js"
+    "static/css/main.557b9586.css",
+    "static/js/main.888ab6e3.js"
   ]
 }
