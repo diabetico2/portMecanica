@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portMecanica/static/css/main.557b9586.css",
-    "main.js": "/portMecanica/static/js/main.888ab6e3.js",
+    "main.css": "/portMecanica/static/css/main.fa4ed7bc.css",
+    "main.js": "/portMecanica/static/js/main.dbd58726.js",
     "static/js/453.5bc2ed4f.chunk.js": "/portMecanica/static/js/453.5bc2ed4f.chunk.js",
     "static/media/a5.png": "/portMecanica/static/media/a5.5ab596f66886a68962eb.png",
     "static/media/logo-gorila.png": "/portMecanica/static/media/logo-gorila.7a6a03fa3893032b4076.png",
@@ -12,12 +12,12 @@
     "static/media/icon-insta.png": "/portMecanica/static/media/icon-insta.2f657e6e5877d2559731.png",
     "static/media/icon-tiktok.png": "/portMecanica/static/media/icon-tiktok.2e5bd3f17bc836886ce3.png",
     "index.html": "/portMecanica/index.html",
-    "main.557b9586.css.map": "/portMecanica/static/css/main.557b9586.css.map",
-    "main.888ab6e3.js.map": "/portMecanica/static/js/main.888ab6e3.js.map",
+    "main.fa4ed7bc.css.map": "/portMecanica/static/css/main.fa4ed7bc.css.map",
+    "main.dbd58726.js.map": "/portMecanica/static/js/main.dbd58726.js.map",
     "453.5bc2ed4f.chunk.js.map": "/portMecanica/static/js/453.5bc2ed4f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.557b9586.css",
-    "static/js/main.888ab6e3.js"
+    "static/css/main.fa4ed7bc.css",
+    "static/js/main.dbd58726.js"
   ]
 }
