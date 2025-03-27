@@ -20,7 +20,7 @@ const SideMenu = ({ isOpen, onClose }) => {
           Home
         </Link>
         <Link to="/eventos" onClick={onClose}>
-          Eventos
+        Taller
         </Link>
         <Link to="/asociacion" onClick={onClose}>
           Asociación

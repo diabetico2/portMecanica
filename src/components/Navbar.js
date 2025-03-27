@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* Links desktop */}
       <nav className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/eventos">Eventos</Link>
+        <Link to="/eventos">Taller</Link>
         <Link to="/asociacion">Asociación</Link>
         <Link to="/barbacoa">Barbacoa</Link>
         <Link to="/pista">Pista</Link>

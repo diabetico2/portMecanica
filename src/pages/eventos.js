@@ -7,7 +7,7 @@ import bannerImg from "../assets/banner2.png";
 import manutencaoImg from "../assets/Churrasco.jpeg";
 import oleoImg from "../assets/Carrinho.jpeg";
 import alinhamentoImg from "../assets/a5.png";
-import diagnosticoImg from "../assets/placeholder.jpg";
+import diagnosticoImg from "../assets/taller.jpeg";
 
 const Eventos = () => {
   useScrollAnimation(); // Scroll reveal
@@ -32,8 +32,8 @@ const Eventos = () => {
       img: alinhamentoImg,
     },
     {
-      title: "Diagnóstico Completo",
-      text: "Utilizamos tecnologia avançada para diagnosticar e corrigir qualquer problema no seu veículo.",
+      title: "Taller",
+      text: "Si buscas un taller de confianza para la personalización, mantenimiento y reparación de vehículos todoterreno, Gorila 4x4 es tu mejor elección. Con un equipo altamente capacitado y una pasión inigualable por el mundo off-road, ofrecemos soluciones especializadas para que tu 4x4 esté siempre listo para cualquier desafío..",
       position: "right",
       img: diagnosticoImg,
     },
