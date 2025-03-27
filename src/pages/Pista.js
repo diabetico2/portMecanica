@@ -9,7 +9,7 @@ import oleoImg from "../assets/Carrinho.jpeg";
 import alinhamentoImg from "../assets/a5.png";
 import diagnosticoImg from "../assets/placeholder.jpg";
 
-const Home = () => {
+const Pista = () => {
   useScrollAnimation(); // Scroll reveal
 
   const items = [
@@ -52,9 +52,7 @@ const Home = () => {
 
       {/* Descrição */}
       <p className="description hidden" style={{fontSize: "1.4rem"}}>
-        Con precios asequibles para los socios, barbacoas, circuito RC, centro
-        de reunión para los clubs de la zona, área de pernoctar, zona para
-        caravanas.... ¡Y MUCHO MÁS! Contáctanos para más información.
+pagina pista
       </p>
 
       {/* Serviços */}
@@ -73,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Pista;
